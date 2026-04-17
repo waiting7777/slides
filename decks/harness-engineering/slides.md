@@ -568,36 +568,6 @@ High confidence 才全自動。Low confidence 強制 escalate 給人。
 
 ---
 
-# Trajectory Critic：看守 AI 的 AI
-
-**qa-reviewer** 不是一般 code reviewer — 它是 **Trajectory Critic**
-
-<div class="mt-2">
-
-評估整條軌跡，不是單一動作：
-
-```
-analyzer 的分類 → fixer 的修復 → PR 的 diff → 測試結果
-```
-
-</div>
-
-<div class="mt-3">
-
-| 異常信號 | 含義 | 動作 |
-|---------|------|------|
-| Low confidence + 嘗試自動修復 | 自動化邊界被突破 | 立即 escalate |
-| High confidence + 複雜修復 (>30行) | 認知錯配 | 標記人工審查 |
-| 模糊的 `spec_quote` | 證據鏈崩壞 | 阻斷 PR |
-
-</div>
-
-<div class="mt-3 text-center text-lg opacity-80">
-Second-Order Quality Assurance — QA 系統的 QA
-</div>
-
----
-
 # Human-in-the-Loop
 
 <div class="p-2 bg-blue-900/20 rounded-lg italic text-base">
@@ -663,25 +633,8 @@ layout: section
 
 ---
 
-# 回答兩個問題
-
-<div class="grid grid-cols-2 gap-8 mt-8">
-
-<div class="p-6 bg-green-900/30 rounded-lg">
-<div class="text-xl font-bold text-green-400 mb-4">Q1: AI Coding 可行嗎？</div>
-
-461 commits、72 PRs、13,545 行 code
-
-98.95% E2E pass rate
-
-49 天、1 人
-
-**QA pipeline 的真實數據就是答案**
-
-</div>
-
 <div class="p-6 bg-amber-900/30 rounded-lg">
-<div class="text-xl font-bold text-amber-400 mb-4">Q2: 怎麼證明完備性？</div>
+<div class="text-xl font-bold text-amber-400 mb-4">Q: 怎麼證明完備性？</div>
 
 1. 人寫 spec (ground truth)
 2. AI 寫 code + test (derived)
@@ -691,7 +644,6 @@ layout: section
 
 **有 spec、有 evidence、有 calibration、有 human boundary**
 
-</div>
 </div>
 
 ---
