@@ -28,6 +28,63 @@ mdc: true
 -->
 
 ---
+
+# 什麼是 Harness Engineering？
+
+<div class="grid grid-cols-[0.9fr_1.1fr] gap-8 mt-2">
+<div>
+
+<img src="./images/harness.jpg" class="rounded-lg border border-gray-700" />
+
+<div class="mt-2 text-xs opacity-50 text-center">
+"Centaur" (1878) · Public Domain · Wikimedia Commons
+</div>
+
+</div>
+<div class="mt-2">
+
+### Harness ＝ 馬具
+
+<div class="mt-1 text-base opacity-80">
+輓具、韁繩、鞍 — 不是控制馬本身，是給馬「方向、工具、邊界」，讓人類能駕馭牠的力量
+</div>
+
+<div class="mt-6 p-4 bg-blue-900/20 rounded-lg border border-blue-900/40">
+
+### Harness Engineering
+
+不是訓練更強的 AI<br/>
+是**設計駕馭 AI 的工程系統**
+
+給 AI：工具 · 上下文 · 反饋 · 安全邊界
+
+</div>
+
+<div class="mt-4 text-sm opacity-70 leading-relaxed">
+🐴 馬 = AI（強大但需要方向）<br/>
+👤 駕駛者 = 工程師<br/>
+🪢 Harness = 中間的工程系統
+</div>
+
+</div>
+</div>
+
+<!--
+Harness 的本意是馬具——輓具、韁繩、馬鞍。它不是控制馬本身，是讓人類能駕馭馬的力量。
+
+把這個類比搬到 AI：
+- 馬 = AI 本身（很強大，但需要方向）
+- 駕駛者 = 人類工程師
+- Harness = 中間的工程系統（工具、上下文、回饋、安全邊界）
+
+Harness Engineering 不是在訓練更強的 AI——那是 model 公司的事。
+
+我們這些應用層的工程師，真正在做的事是：設計駕馭 AI 的系統。
+
+今天要分享的 9-Agent QA Pipeline，就是一個 harness 的具體實例。
+-->
+
+---
 layout: center
 class: text-center
 ---
