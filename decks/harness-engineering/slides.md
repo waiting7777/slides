@@ -669,41 +669,6 @@ qa-analyzer  ──writes──▶  .issues.json   ──reads──▶  qa-issu
 </div>
 </div>
 
-# Pipeline 真實指標
-
-<div class="grid grid-cols-2 gap-8 mt-4">
-<div>
-
-| 指標 | 數值 |
-|------|------|
-| Pipeline 執行次數 | 14 (7 天) |
-| E2E pass rate 趨勢 | 85% → 98.95% |
-| Unit test | 344/344 (100%) |
-| Route coverage | 13/13 (100%) |
-| Issues 自動分類 | 60 個 |
-| Issues 自動修復 | 30+ 個 |
-| Issues 自動結案 | 46 個 |
-| QA Bot PRs | 30 (merged 18) |
-
-</div>
-<div>
-
-| 指標 | 數值 |
-|------|------|
-| 平均 pipeline 時長 | ~45 min |
-| 每次 API 成本 | ~$2-4 |
-| 需人工介入 | ~20% |
-| Learned patterns | 9 個 |
-| Page load | Sub-100ms |
-| Zero code-bugs | 最近 7 天 |
-
-</div>
-</div>
-
-<div class="mt-4 text-center text-lg text-green-400 font-bold">
-Source code 完全符合 spec — 所有近期 failure 都是 test-bug / flaky
-</div>
-
 ---
 
 # QA Bot 實際 PR
