@@ -1,0 +1,11 @@
+{
+  "name": "slides-hub",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Wayne's tech sharing slide decks",
+  "scripts": {
+    "dev": "cd decks/harness-engineering && npm run dev",
+    "build": "bash scripts/build-all.sh",
+    "preview": "npx --yes http-server dist -p 8000 -c-1"
+  }
+}

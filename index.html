@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wayne's Tech Sharing</title>
+  <style>
+    :root {
+      --bg: #0b0f1a;
+      --card: #141a2a;
+      --card-hover: #1b2336;
+      --text: #e6edf3;
+      --muted: #8b96a7;
+      --accent: #60a5fa;
+      --border: #22304a;
+    }
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans TC",
+                   "PingFang TC", "Microsoft JhengHei", sans-serif;
+      font-feature-settings: "palt";
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 80px 24px 60px;
+    }
+    header { margin-bottom: 48px; }
+    h1 {
+      font-size: 2.5rem;
+      margin: 0 0 12px;
+      letter-spacing: -0.02em;
+    }
+    .subtitle { color: var(--muted); font-size: 1.05rem; margin: 0; }
+    .decks { display: flex; flex-direction: column; gap: 16px; }
+    .deck {
+      display: block;
+      padding: 24px 28px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      text-decoration: none;
+      color: inherit;
+      transition: all 0.15s ease;
+    }
+    .deck:hover {
+      background: var(--card-hover);
+      border-color: var(--accent);
+      transform: translateY(-1px);
+    }
+    .deck-title {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin: 0 0 6px;
+      color: var(--text);
+    }
+    .deck-sub {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin: 0 0 12px;
+    }
+    .deck-meta {
+      display: flex;
+      gap: 12px;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+    .deck-meta span::before { content: "·"; margin-right: 12px; color: var(--border); }
+    .deck-meta span:first-child::before { content: ""; margin-right: 0; }
+    footer {
+      margin-top: 64px;
+      color: var(--muted);
+      font-size: 0.85rem;
+      text-align: center;
+    }
+    footer a { color: var(--muted); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Tech Sharing</h1>
+      <p class="subtitle">Wayne Zheng · slide archive</p>
+    </header>
+
+    <div class="decks">
+      <a class="deck" href="./harness-engineering/">
+        <div class="deck-title">Harness Engineering</div>
+        <div class="deck-sub">你怎麼知道 AI 寫的 Code 是對的？</div>
+        <div class="deck-meta">
+          <span>BerryBoard Tech Sharing</span>
+          <span>2026-04-18</span>
+        </div>
+      </a>
+    </div>
+
+    <footer>
+      <a href="https://github.com/waiting7777/slides">source on github</a>
+    </footer>
+  </div>
+</body>
+</html>
