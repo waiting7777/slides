@@ -627,49 +627,6 @@ Low Confidence  ────→ 人類審查 evidence chain（驗證 → 判斷 
 </div>
 
 ---
-layout: section
----
-
-# 第四部分
-## QA Pipeline
-
----
-
-# Share-Nothing Architecture
-
-Agent 之間 **零共享記憶體** — artifact-based message passing
-
-<div class="mt-3">
-
-```
-qa-planner  ──writes──▶  test-plan.json  ──reads──▶  qa-collector
-qa-collector ──writes──▶  results.json   ──reads──▶  qa-analyzer
-qa-analyzer  ──writes──▶  .issues.json   ──reads──▶  qa-issue-filer
-```
-
-</div>
-
-<div class="grid grid-cols-2 gap-6 mt-3">
-<div class="p-4 bg-blue-900/30 rounded-lg">
-
-### 優點
-- 每個 agent 可獨立重跑、debug、替換模型
-- 單一 agent 失敗 = 局部事件
-
-</div>
-<div class="p-4 bg-green-900/30 rounded-lg">
-
-### Safety Invariants
-- 每次最多修 **3 個 issue**
-- 每個 issue 最多 retry **3 次**
-- 每次最多改 **50 行**
-- 必須跑 targeted + full regression
-- 違反任一條 → **立即中止**
-
-</div>
-</div>
-
----
 
 # QA Bot 實際 PR
 
