@@ -755,7 +755,7 @@ layout: section
 
 ---
 
-# Q & A 环节精选 ref: 字節跳動 Web Infra
+# Q & A 环节精选 ref: [字節跳動 Web Infra](https://github.com/zhoushaw/Context-Engineering-to-Harness-Engineering?tab=readme-ov-file)
 
 <div>
 Q：AI 产生很多文件变更（几十个变更），你只关心单测和测试结果有没有覆盖到，但怎么让整个代码架构朝着合适的方向前进，而不是因为 AI 的变更导致代码不好维护？
@@ -776,23 +776,11 @@ class: text-center
 
 # 最後一句
 
-<div class="mt-8 text-2xl leading-relaxed opacity-90">
-
-「最好的 QA 工程師，是讓自己變得不需要的那個。」
-
-</div>
-
 <div class="mt-8 text-lg opacity-70">
 
 人做判斷，AI 做執行
 
 人定義「對」，AI 驗證「對不對」
-
-</div>
-
-<div class="mt-8 text-base opacity-50">
-
-這不是未來。這是 49 天前就開始在跑的 QA 驗證系統。
 
 </div>
 
